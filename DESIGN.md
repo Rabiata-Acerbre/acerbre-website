@@ -117,7 +117,7 @@ components:
 
 **Creative North Star: "The Market Observatory"**
 
-Acerbre should feel like entering a nocturnal instrument room built to examine markets rather than sell a fantasy about them. The world is disciplined, premium, technical, and evidence-first: midnight surfaces hold steel measurement lines, paper-white conclusions, and a single red decision signal. Pixel-art market machines supply the authored imagery and keep the identity specific to Acerbre.
+Acerbre should feel like entering a nocturnal research office built to examine markets rather than sell a fantasy about them. The world is disciplined, premium, technical, and evidence-first: midnight surfaces hold steel rules, paper-white conclusions, and a single red decision signal. General pages rely on typography, spacing, and evidence—not candlestick scenery or generic market patterns. AppleTree and Bergo artwork is reserved for the respective product page.
 
 The composition is editorial rather than modular. Large assertions share asymmetrical grids with evidence, risk, and operating detail; thin borders create structure without turning every idea into a generic card. Motion reads as observation—a scan, trace, resolving image, or measured drift—and the full meaning remains available when animation is absent.
 
@@ -126,7 +126,7 @@ The composition is editorial rather than modular. Large assertions share asymmet
 - Nocturnal navy surfaces with steel-blue instrumentation.
 - Bold Manrope assertions paired with compact DM Mono evidence labels.
 - Square geometry, thin rules, and restrained tonal depth.
-- Pixel-art market machines used as substantive editorial imagery.
+- Product artwork used once, on the product's own evaluation page.
 - Return, limitation, and risk presented in the same visual field.
 - Responsive asymmetry that becomes a clear single-column sequence on narrow screens.
 
@@ -189,7 +189,7 @@ The palette behaves like an observation instrument: dark optical housing, cool m
 
 ## Layout
 
-The default content shell is capped at 1240px with 24px gutters on desktop, 18px at tablet widths, and 14px on small screens. Major chapters use generous vertical rhythm (112px at full width, roughly 76–78px on mobile) and are divided by one-pixel instrument lines.
+The default content shell is capped at 1240px with 24px gutters on desktop, 18px at tablet widths, and 14px on small screens. Major chapters use generous vertical rhythm (112px at full width, roughly 76–78px on mobile) and are divided by one-pixel instrument lines. General business pages use editorial ledgers and type-led composition in place of decorative finance imagery.
 
 The spatial grammar is asymmetrical and editorial: opening arguments commonly use a 1.1/0.9 or 1.3/0.7 split, evidence pairs use image-and-copy ratios chosen for the story, and the field ledger alternates image and text. Repetition comes from alignment, rules, and rhythm—not an array of interchangeable cards. At 980px, compound grids become one-column flows; at 640px, media becomes square or naturally stacked, controls remain comfortably tappable, and hierarchy is preserved rather than miniaturized.
 
@@ -201,7 +201,7 @@ The system is flat by default. It uses tonal changes, overlays, thin structural 
 
 ### Shadow Vocabulary
 
-- **Image Vignette** (`inset 0 0 80px 26px rgba(3,7,13,.5)`): Integrates full-bleed pixel art into dark sections without framing it as a floating card.
+- **Product Image Vignette** (`inset 0 0 80px 26px rgba(3,7,13,.5)`): May integrate the named product artwork on that product's own page only.
 - **Signal Core** (`0 0 44px rgba(242,11,22,.18)`): A rare halo for the active observation point only.
 - **Hero Legibility** (`0 2px 22px #03070d`): Keeps introductory copy readable over the observatory field.
 
@@ -250,7 +250,7 @@ The method rail is a signature observation sequence: short mono verbs joined by 
 
 ### Product Card
 
-The product card pairs a dense evidence-and-action plate with authoritative pixel artwork. Product promise, risk profile, licensing metadata, explanation, and price stay visible together. On mobile, copy precedes artwork and risk attributes remain adjacent to the product identity.
+The homepage product card is typographic: product promise, risk profile, monthly licensing metadata, explanation, and price stay visible together. Product artwork appears only in the hero of the corresponding product page.
 
 ### Risk Band
 
@@ -263,7 +263,7 @@ The risk band is a chapter-level disclosure, not a footer disclaimer. It uses th
 - **Do** let evidence, limitations, and risk share the same visual field as performance and purchase actions.
 - **Do** use red only for action, active signal, plotted emphasis, or real risk status.
 - **Do** build hierarchy with asymmetrical editorial grids, measured spacing, thin borders, and tonal navy layers.
-- **Do** use Acerbre's pixel-art market machines as meaningful imagery with descriptive alternative text when informative.
+- **Do** reserve AppleTree and Bergo artwork for their respective product pages and use descriptive alternative text there.
 - **Do** keep every message and interaction understandable with animation disabled, and honor `prefers-reduced-motion`.
 - **Do** preserve keyboard access, visible focus, readable contrast, and a coherent mobile reading order.
 
@@ -273,4 +273,5 @@ The risk band is a chapter-level disclosure, not a footer disclaimer. It uses th
 - **Don't** turn red into a decorative wash or distribute it evenly across the page; its rarity is the point.
 - **Don't** separate return from drawdown, historical-simulation limits, product boundaries, or capital-at-risk language.
 - **Don't** use animation as spectacle, as the sole carrier of meaning, or as a prerequisite for content visibility.
-- **Don't** replace the authored pixel-art world with generic finance photography, stock candlestick backgrounds, or invented customer proof.
+- **Don't** use generic finance photography, stock candlestick backgrounds, decorative market patterns, or invented customer proof.
+- **Don't** repeat AppleTree or Bergo symbols on overview, service, evidence, or licensing surfaces.

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#03070d">
-  <meta name="description" content="AppleTree is Acerbre's multi-module MT5 execution system with a minimal client control surface and account-bound licensing.">
+  <meta name="description" content="AppleTree is Acerbre's multi-module MT5 execution system, available through a monthly license linked to an MT5 broker account and customer email.">
   <title>AppleTree — Acerbre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
           <div class="eyebrow">Acerbre system · MetaTrader 5</div>
           <h1>Apple<span class="muted">Tree</span></h1>
           <p class="lede">A multi-module intraday execution system. The commercial build keeps the research configuration internal and exposes one client-facing trading control: <strong class="red">RiskPercent</strong>.</p>
-          <div class="hero-actions"><a class="btn" href="/licensing/#appletree">License AppleTree · US$20,000</a><a class="btn-outline" href="#performance">View test evidence</a></div>
+          <div class="hero-actions"><a class="btn" href="/licensing/#appletree">License AppleTree · US$20,000/month</a><a class="btn-outline" href="#performance">View test evidence</a></div>
           <div class="hero-specs">
             <div class="hero-spec"><span class="label">Release</span><strong>v1.00 candidate</strong></div>
             <div class="hero-spec"><span class="label">Runtime</span><strong>MT5 hedging</strong></div>
@@ -108,30 +108,26 @@
               <tr><th>Instrument / timeframe</th><td>US100p · M30</td></tr>
               <tr><th>Initial deposit / leverage</th><td>US$100,000 · 1:100</td></tr>
               <tr><th>History quality</th><td>73% real ticks · 91,298,806 ticks</td></tr>
+              <tr><th>Test account costs</th><td>Relatively high spread · US$0 separate commission</td></tr>
               <tr><th>Report activity</th><td>297 trades · 594 deals</td></tr>
             </tbody>
           </table>
         </div>
-        <aside class="test-limits reveal" aria-label="Test limitations">
-          <h3>Read the limitations first.</h3>
-          <p>The report input sets cost per lot to 0.0. Live commissions, spreads, slippage, contract specifications, latency, and different market regimes can reduce returns or increase drawdown.</p>
-          <p>Historical tester results are not expected returns, and no result is guaranteed.</p>
-        </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="shell split">
-        <div class="sticky reveal"><div class="eyebrow">Authorization</div><h2>Licensed to the account, not the machine.</h2><p class="lede">AppleTree's license identity is the product plus the MT5 account number. The broker server is deliberately not part of authorization.</p><a class="btn" href="/licensing/#appletree">Full licensing model</a></div>
+        <div class="sticky reveal"><div class="eyebrow">Monthly authorization</div><h2>Your account number and email establish the license.</h2><p class="lede">Send Acerbre the MT5 broker account number and the email used for the order. AppleTree and Bergo use the same monthly authorization system; no machine fingerprint or serial key is required.</p><a class="btn" href="/licensing/#appletree">Full licensing model</a></div>
         <div class="license-flow reveal">
-          <article class="flow-step"><span class="panel-number">01</span><strong>Provision</strong><p>Rabiata authorizes an MT5 account for AppleTree. No client-visible serial key is required.</p></article>
-          <article class="flow-step"><span class="panel-number">02</span><strong>Validate</strong><p>The EA obtains a short-lived authorization lease and refreshes it periodically.</p></article>
-          <article class="flow-step"><span class="panel-number">03</span><strong>Revoke safely</strong><p>New exposure is blocked. Existing positions continue under normal exits and risk controls.</p></article>
+          <article class="flow-step"><span class="panel-number">01</span><strong>Send your details</strong><p>Provide AppleTree, your MT5 broker account number, and your customer email.</p></article>
+          <article class="flow-step"><span class="panel-number">02</span><strong>Receive activation</strong><p>Acerbre provisions the monthly license for that product and account.</p></article>
+          <article class="flow-step"><span class="panel-number">03</span><strong>Validate online</strong><p>The EA checks the account authorization periodically while the monthly license is active.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section-compact license-decision"><div class="shell license-decision-grid"><h2>AppleTree is licensed at US$20,000.</h2><div><p>The commercial license is provisioned to an approved MT5 account. Review the authorization boundary and contact Acerbre before purchase.</p><a class="btn" href="/licensing/#appletree">Request an AppleTree license</a></div></div></section>
+    <section class="section-compact license-decision"><div class="shell license-decision-grid"><h2>AppleTree is US$20,000 per month.</h2><div><p>Send the MT5 broker account number and your email address to receive the monthly account license.</p><a class="btn" href="mailto:contact@rabiata.com?subject=AppleTree%20monthly%20license">Request an AppleTree license</a></div></div></section>
     <section class="section-compact"><div class="shell callout"><strong>Current release status:</strong> the v1.00 source compiles successfully. Runtime acceptance, licensing-state tests and controlled forward validation remain separate release checks.</div></section>
     <section class="risk-band"><div class="shell risk-grid"><h2>Risk notice</h2><p>No performance promise is made on this page. Trading systems can lose money, and historical or simulated results do not guarantee future outcomes.</p></div></section>
   </main>

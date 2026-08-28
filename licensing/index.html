@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#03070d">
-  <meta name="description" content="Acerbre product licensing and AppleTree account-bound authorization architecture.">
+  <meta name="description" content="Monthly AppleTree and Bergo licensing linked to an MT5 broker account number and customer email.">
   <title>Licensing — Acerbre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,53 +22,55 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div class="reveal">
-          <div class="eyebrow">Product access</div>
-          <h1>Licensing without <span class="muted">trading risk.</span></h1>
-          <p class="lede">The Rabiata license service provides product-scoped authorization for Acerbre software. The exact client policy is product-specific; AppleTree's current model is documented below.</p>
-          <div class="hero-actions"><a class="btn" href="#appletree">AppleTree model</a><a class="btn-outline" href="#setup">MT5 setup</a></div>
+          <div class="eyebrow">Monthly product access</div>
+          <h1>One licensing flow for <span class="muted">both systems.</span></h1>
+          <p class="lede">AppleTree and Bergo use the same monthly authorization service. Choose the product, send your MT5 broker account number and customer email, and Acerbre provisions the license.</p>
+          <div class="hero-actions"><a class="btn" href="#products">View monthly licenses</a><a class="btn-outline" href="#setup">MT5 setup</a></div>
         </div>
         <aside class="system-panel" aria-label="Licensing principles">
           <div class="system-panel-head"><span class="label">Access principles</span><span class="status"><span class="status-dot" aria-hidden="true"></span> Product scoped</span></div>
           <div class="system-panel-main">
-            <p class="system-wordmark">One account.<span>Product identity + MT5 account number</span></p>
+            <p class="system-wordmark">One monthly license.<span>Product + MT5 account number + customer email</span></p>
             <div class="system-grid">
-              <div class="system-item"><span class="label">Machine</span><strong>Not an identity</strong></div>
-              <div class="system-item"><span class="label">Broker server</span><strong>Not an identity</strong></div>
+              <div class="system-item"><span class="label">Term</span><strong>Monthly</strong></div>
+              <div class="system-item"><span class="label">Products</span><strong>AppleTree + Bergo</strong></div>
+              <div class="system-item"><span class="label">You provide</span><strong>Account + email</strong></div>
               <div class="system-item"><span class="label">Serial key</span><strong>Not required</strong></div>
-              <div class="system-item"><span class="label">Validation</span><strong>Short-lived lease</strong></div>
             </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="appletree">
+    <section class="section" id="products">
       <div class="shell split">
-        <div class="sticky reveal"><div class="eyebrow">AppleTree</div><h2>Keyless, account-bound authorization.</h2><p class="lede">AppleTree is authorized using the product identity and MT5 account number. It does not require a user-entered license key, hardware fingerprint or broker-server lock.</p></div>
+        <div class="sticky reveal"><div class="eyebrow">AppleTree + Bergo</div><h2>Monthly, keyless, account-bound.</h2><p class="lede">Both products use the same flow. Your product choice, MT5 broker account number, and customer email are used to provision the monthly license. No machine fingerprint or client-entered serial key is required.</p></div>
         <div class="reveal">
           <table class="compare">
             <tbody>
-              <tr><th>Authorization identity</th><td>AppleTree + MT5 account number</td></tr>
-              <tr><th>Commercial license price</th><td><strong>US$20,000</strong></td></tr>
-              <tr><th>Broker server</th><td>Not an authorization condition.</td></tr>
+              <tr id="appletree"><th>AppleTree monthly license</th><td><strong>US$20,000 / month</strong></td></tr>
+              <tr id="bergo"><th>Bergo monthly license</th><td><strong>US$200 / month</strong></td></tr>
+              <tr><th>Required details</th><td>Product, MT5 broker account number, and customer email.</td></tr>
+              <tr><th>Broker server</th><td>Not required for the license identity.</td></tr>
               <tr><th>Machine / VPS</th><td>Not an authorization condition.</td></tr>
-              <tr><th>Client license key</th><td>Not required for AppleTree.</td></tr>
+              <tr><th>Client license key</th><td>Not required for either product.</td></tr>
               <tr><th>Session model</th><td>Short-lived server-issued lease with periodic refresh.</td></tr>
-              <tr><th>Explicit revocation</th><td>Stops AppleTree from opening new exposure.</td></tr>
+              <tr><th>Expired monthly term</th><td>Stops the licensed product from opening new exposure.</td></tr>
               <tr><th>Positions already open</th><td>Remain under the EA's normal stop, state-exit, timed-exit and hard-flat management.</td></tr>
             </tbody>
           </table>
+          <div class="hero-actions"><a class="btn" href="mailto:contact@rabiata.com?subject=Acerbre%20monthly%20license">Email account details</a></div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="shell">
-        <div class="section-head reveal"><div><div class="eyebrow">Operational behavior</div><h2>Authorization state is separate from position state.</h2></div><p class="lede">A licensing event decides whether new risk may be created. It does not become an ad-hoc liquidation signal for positions that already exist.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">Activation flow</div><h2>Send the account. Receive the license.</h2></div><p class="lede">The same three steps apply to AppleTree and Bergo. The license remains active for the paid monthly term.</p></div>
         <div class="license-flow reveal">
-          <article class="flow-step"><span class="panel-number">01 · Active</span><strong>New exposure allowed</strong><p>The account is authorized and the EA may process its normal entry logic.</p></article>
-          <article class="flow-step"><span class="panel-number">02 · Temporary outage</span><strong>Bounded grace</strong><p>After valid authorization, temporary service or network failure may use the configured grace policy rather than turning connectivity loss into a trading decision.</p></article>
-          <article class="flow-step"><span class="panel-number">03 · Revoked / expired</span><strong>New exposure blocked</strong><p>The EA stops creating new positions. Existing positions continue under their normal management rules.</p></article>
+          <article class="flow-step"><span class="panel-number">01 · Choose</span><strong>AppleTree or Bergo</strong><p>Select the product and confirm the monthly price.</p></article>
+          <article class="flow-step"><span class="panel-number">02 · Send</span><strong>Account number + email</strong><p>Email the MT5 broker account number and the customer email used for the order.</p></article>
+          <article class="flow-step"><span class="panel-number">03 · Activate</span><strong>Receive the monthly license</strong><p>Acerbre provisions the selected product for that account and confirms activation by email.</p></article>
         </div>
       </div>
     </section>
@@ -77,18 +79,17 @@
       <div class="shell split">
         <div class="sticky reveal"><div class="eyebrow">MT5 setup</div><h2>One manual terminal permission.</h2><p class="lede">MetaTrader 5 requires users to explicitly allow WebRequest access to the licensing origin. The EA cannot silently add this permission itself.</p></div>
         <div class="panel reveal">
-          <div class="panel-number">AppleTree setup</div>
+          <div class="panel-number">AppleTree and Bergo setup</div>
           <ol class="panel-list">
             <li>Open <strong>Tools → Options → Expert Advisors</strong>.</li>
             <li>Enable WebRequest for the Rabiata licensing URL supplied with the product.</li>
-            <li>Attach the compiled AppleTree EA to the intended MT5 chart and enable Algo Trading.</li>
+            <li>Attach the licensed EA to the intended MT5 chart and enable Algo Trading.</li>
           </ol>
-          <p class="callout">AppleTree derives the account identifier from the running terminal; there is no license key field to complete.</p>
+          <p class="callout">The EA reads the account identifier from the running terminal. There is no license-key field to complete.</p>
         </div>
       </div>
     </section>
 
-    <section class="section-compact"><div class="shell callout"><strong>Bergo:</strong> its public licensing policy is intentionally not stated here yet. The Bergo page will be updated after that product's commercial specification is confirmed.</div></section>
     <section class="risk-band"><div class="shell risk-grid"><h2>Infrastructure boundary</h2><p>The licensing service authorizes software use. It does not hold broker credentials, place discretionary trades, or guarantee strategy performance.</p></div></section>
   </main>
 

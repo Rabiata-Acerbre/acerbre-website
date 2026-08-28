@@ -26,7 +26,7 @@ Visitors evaluate product pages, historical strategy-tester evidence, risk discl
 
 ## Capabilities and Constraints
 
-- Public products currently include AppleTree and Bergo, with separate licenses and different risk profiles.
+- Public products currently include AppleTree and Bergo. Both use the same monthly account-number + customer-email licensing service, with different prices and risk profiles.
 - Services include retail-market research, custom trading-system development, consulting, and education.
 - Primary actions are buying or requesting a product license and emailing Acerbre.
 - The site must not imply guaranteed returns, investment advice, discretionary account management, or results beyond the evidence already published.
@@ -42,8 +42,9 @@ Visitors evaluate product pages, historical strategy-tester evidence, risk discl
 
 - Existing product and licensing pages: `appletree/index.html`, `bergo/index.html`, and `licensing/index.html`.
 - Public Bergo MT5 Strategy Tester metrics and methodology disclosure in `bergo/index.html`.
-- Existing Acerbre logo and AppleTree/Bergo pixel artwork under `assets/`.
-- AppleTree MT5 Strategy Tester report supplied on 28 August 2026: US100p, M30, 1 June 2024–18 August 2026, US$100,000 initial deposit, 73% real ticks, US$20,328.29 net profit, 2.67% maximum equity drawdown, 2.04 profit factor, and 297 trades. Historical simulation only; the report input sets cost per lot to 0.0.
+- Existing Acerbre logo and AppleTree/Bergo product artwork under `assets/`. Product artwork is reserved for its respective product page and is not repeated as general business imagery.
+- AppleTree MT5 Strategy Tester report supplied on 28 August 2026: US100p, M30, 1 June 2024–18 August 2026, US$100,000 initial deposit, 73% real ticks, US$20,328.29 net profit, 2.67% maximum equity drawdown, 2.04 profit factor, and 297 trades. Historical simulation only. The supplied test account used a relatively high spread and US$0 separate commission.
+- Commercial terms supplied on 28 August 2026: AppleTree is US$20,000 per month and Bergo is US$200 per month. The customer sends the product choice, MT5 broker account number, and email to receive activation.
 - No customer testimonials, broker partnerships, live-return claims, or external certifications are currently supplied; future work must not fabricate them.
 
 ## Product Principles
