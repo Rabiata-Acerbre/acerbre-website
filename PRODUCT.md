@@ -43,6 +43,7 @@ Visitors evaluate product pages, historical strategy-tester evidence, risk discl
 - Existing product and licensing pages: `appletree/index.html`, `bergo/index.html`, and `licensing/index.html`.
 - Public Bergo MT5 Strategy Tester metrics and methodology disclosure in `bergo/index.html`.
 - Existing Acerbre logo and AppleTree/Bergo pixel artwork under `assets/`.
+- AppleTree MT5 Strategy Tester report supplied on 28 August 2026: US100p, M30, 1 June 2024–18 August 2026, US$100,000 initial deposit, 73% real ticks, US$20,328.29 net profit, 2.67% maximum equity drawdown, 2.04 profit factor, and 297 trades. Historical simulation only; the report input sets cost per lot to 0.0.
 - No customer testimonials, broker partnerships, live-return claims, or external certifications are currently supplied; future work must not fabricate them.
 
 ## Product Principles
