@@ -24,7 +24,12 @@
     }, { passive: true });
   }
 
-  if (document.querySelector('.welcome-sequence')) {
+  const welcomeSequence = document.querySelector('.welcome-sequence');
+  if (welcomeSequence && !document.documentElement.classList.contains('welcome-done')) {
+    try {
+      sessionStorage.setItem('acerbre:welcome:v1', 'seen');
+    } catch (_) {}
+
     if (reducedMotion) {
       document.documentElement.classList.add('welcome-done');
     } else {

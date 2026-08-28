@@ -15,7 +15,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site.css?v=20260828b">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      if (sessionStorage.getItem('acerbre:welcome:v1') === 'seen') {
+        document.documentElement.classList.add('welcome-done');
+      }
+    } catch (_) {}
+  </script>
 </head>
 <body class="home-page">
   <!--
@@ -96,6 +103,6 @@
   </main>
 
   <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>The retail-trading systems studio of Rabiata LLC.</p></div><nav class="footer-nav" aria-label="Footer"><a href="#work">What we do</a><a href="#systems">Systems</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a><a href="mailto:contact@rabiata.com?subject=Acerbre%20inquiry">Email</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Research · Systems · Consulting · Education</span></div></div></footer>
-  <script src="/assets/site.js?v=20260828b"></script>
+  <script src="/assets/site.js?v=20260828c"></script>
 </body>
 </html>
