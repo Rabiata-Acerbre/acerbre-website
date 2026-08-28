@@ -126,7 +126,8 @@ The composition is editorial rather than modular. Large assertions share asymmet
 - Nocturnal navy surfaces with steel-blue instrumentation.
 - Bold Manrope assertions paired with compact DM Mono evidence labels.
 - Square geometry, thin rules, and restrained tonal depth.
-- Product artwork used once, on the product's own evaluation page.
+- Product artwork used only where that product is being evaluated: the homepage systems section and its own page.
+- Product-neutral precision-laboratory artwork ornaments the general business story without borrowing AppleTree or Bergo symbols.
 - Return, limitation, and risk presented in the same visual field.
 - Responsive asymmetry that becomes a clear single-column sequence on narrow screens.
 
@@ -189,7 +190,7 @@ The palette behaves like an observation instrument: dark optical housing, cool m
 
 ## Layout
 
-The default content shell is capped at 1240px with 24px gutters on desktop, 18px at tablet widths, and 14px on small screens. Major chapters use generous vertical rhythm (112px at full width, roughly 76–78px on mobile) and are divided by one-pixel instrument lines. General business pages use editorial ledgers and type-led composition in place of decorative finance imagery.
+The default content shell is capped at 1240px with 24px gutters on desktop, 18px at tablet widths, and 14px on small screens. Major chapters use generous vertical rhythm (112px at full width, roughly 76–78px on mobile) and are divided by one-pixel instrument lines. General business pages pair editorial ledgers with product-neutral precision-laboratory artwork; imagery must clarify research, engineering, testing, evidence, or collaboration rather than decorate with finance clichés.
 
 The spatial grammar is asymmetrical and editorial: opening arguments commonly use a 1.1/0.9 or 1.3/0.7 split, evidence pairs use image-and-copy ratios chosen for the story, and the field ledger alternates image and text. Repetition comes from alignment, rules, and rhythm—not an array of interchangeable cards. At 980px, compound grids become one-column flows; at 640px, media becomes square or naturally stacked, controls remain comfortably tappable, and hierarchy is preserved rather than miniaturized.
 
@@ -250,7 +251,7 @@ The method rail is a signature observation sequence: short mono verbs joined by 
 
 ### Product Card
 
-The homepage product card is typographic: product promise, risk profile, monthly licensing metadata, explanation, and price stay visible together. Product artwork appears only in the hero of the corresponding product page.
+The homepage product card pairs the product promise, risk profile, monthly licensing metadata, explanation, and price with the corresponding AppleTree or Bergo artwork. The same artwork may lead the corresponding product page, but it must not leak into service, method, evidence, partnership, or licensing illustrations.
 
 ### Risk Band
 
@@ -263,7 +264,8 @@ The risk band is a chapter-level disclosure, not a footer disclaimer. It uses th
 - **Do** let evidence, limitations, and risk share the same visual field as performance and purchase actions.
 - **Do** use red only for action, active signal, plotted emphasis, or real risk status.
 - **Do** build hierarchy with asymmetrical editorial grids, measured spacing, thin borders, and tonal navy layers.
-- **Do** reserve AppleTree and Bergo artwork for their respective product pages and use descriptive alternative text there.
+- **Do** reserve AppleTree and Bergo artwork for the homepage product choice and their respective product pages, with descriptive alternative text.
+- **Do** use the precision-laboratory asset system to distinguish research, engineering, consulting, education, testing, execution, risk, evidence, and partnership chapters.
 - **Do** keep every message and interaction understandable with animation disabled, and honor `prefers-reduced-motion`.
 - **Do** preserve keyboard access, visible focus, readable contrast, and a coherent mobile reading order.
 
@@ -274,4 +276,4 @@ The risk band is a chapter-level disclosure, not a footer disclaimer. It uses th
 - **Don't** separate return from drawdown, historical-simulation limits, product boundaries, or capital-at-risk language.
 - **Don't** use animation as spectacle, as the sole carrier of meaning, or as a prerequisite for content visibility.
 - **Don't** use generic finance photography, stock candlestick backgrounds, decorative market patterns, or invented customer proof.
-- **Don't** repeat AppleTree or Bergo symbols on overview, service, evidence, or licensing surfaces.
+- **Don't** repeat AppleTree or Bergo symbols outside the homepage product choice and the corresponding product page.
