@@ -46,7 +46,7 @@ Visitors evaluate product pages, historical strategy-tester evidence, risk discl
 - A ten-piece product-neutral visual system was generated on 28 August 2026 for the observatory hero, four practices, three method stages, evidence, and partnerships. These assets use precision-laboratory and editorial-instrument metaphors without candlesticks, market-pattern wallpaper, trees, apples, guns, or bullets.
 - AppleTree MT5 Strategy Tester report supplied on 28 August 2026: US100p, M30, 1 June 2024–18 August 2026, US$100,000 initial deposit, 73% real ticks, US$20,328.29 net profit, 2.67% maximum equity drawdown, 2.04 profit factor, and 297 trades. Historical simulation only. The supplied test account used a relatively high spread and US$0 separate commission.
 - Four Bergo MT5 Strategy Tester reports supplied on 28 August 2026, all M30 from 1 June 2024 through 18 August 2026 with US$100,000 initial deposits: US100p returned 3.94% with 4.41% maximum equity drawdown; USOILp returned 43.66% with 14.41% drawdown; XAUUSDp returned 273.27% with 10.79% drawdown; BTCUSDp lost 32.28% with 48.51% drawdown and is published as the strategy's failure case.
-- Commercial terms supplied on 28 August 2026: AppleTree is US$20,000 per month and Bergo is US$200 per month. The customer sends the product choice, MT5 broker account number, and email to receive activation.
+- Commercial terms supplied on 28 August 2026: AppleTree is US$1,299 per month and Bergo is US$149 per month. The customer sends the product choice, MT5 broker account number, and email to receive activation.
 - No customer testimonials, broker partnerships, live-return claims, or external certifications are currently supplied; future work must not fabricate them.
 
 ## Product Principles
