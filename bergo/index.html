@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03070d">
+  <meta name="description" content="Bergo performance and risk: MT5 strategy-tester results across US100, US500, USOIL and XAUUSD.">
+  <title>Bergo — Acerbre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    .bergo-note{margin-top:20px;padding:15px 18px;border-left:3px solid var(--red);background:#09121b;color:#9eabb9;font:11px/1.65 var(--mono)}
+    .perf-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line-strong);border-left:1px solid var(--line-strong);margin-top:46px}
+    .perf-card{padding:24px;background:var(--navy);border-right:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong)}
+    .perf-card .market,.perf-label{color:#8493a4;font:700 10px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+    .perf-card .big{margin:16px 0 4px;color:#fff;font-size:clamp(2.1rem,4vw,3.35rem);font-weight:760;letter-spacing:-.055em;line-height:1}
+    .perf-card.extreme .big,.danger{color:#ff626a!important}.perf-card.weak .big{color:#9ba6b4}
+    .perf-card dl{margin:22px 0 0;display:grid;gap:10px}.perf-card dl div{display:flex;justify-content:space-between;gap:12px;padding-top:10px;border-top:1px solid var(--line)}
+    .perf-card dt{color:#788697;font:10px var(--mono);text-transform:uppercase}.perf-card dd{margin:0;color:#e0e6ec;font:12px var(--mono)}
+    .risk-tag{display:inline-block;margin-top:18px;padding:6px 8px;border:1px solid var(--line-strong);color:#aab6c3;font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase}.risk-tag.red{border-color:#7b2026;color:#ff737a}
+    .scoreboard{display:grid;grid-template-columns:1.1fr .9fr;margin-top:54px;border:1px solid var(--line-strong);background:#060d15}
+    .score-main,.score-side{padding:32px}.score-side{border-left:1px solid var(--line-strong);background:#07111d}
+    .score-main h3{margin-bottom:26px}.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .metric{min-height:102px;padding:16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.metric span{display:block;color:#778697;font:9px var(--mono);letter-spacing:.08em;text-transform:uppercase}.metric strong{display:block;margin-top:9px;color:#fff;font:19px var(--mono);font-weight:500}
+    .score-side p{color:#9eabb9}.score-side ul{margin:24px 0 0;padding:0;list-style:none}.score-side li{padding:12px 0;border-top:1px solid var(--line);color:#98a5b3}.score-side b{color:#e5eaf0;font-family:var(--mono);font-weight:500}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line-strong)}.bergo-table{min-width:930px;border:0}.bergo-table td strong{color:#fff}
+    .risk-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line-strong);border-left:1px solid var(--line-strong)}
+    .risk-box{padding:28px;border-right:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong)}.risk-box .n{color:var(--red);font:11px var(--mono)}.risk-box h3{margin:42px 0 14px;font-size:1.45rem}.risk-box p{margin:0;color:#99a7b5}
+    @media(max-width:980px){.perf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.scoreboard{grid-template-columns:1fr}.score-side{border-left:0;border-top:1px solid var(--line-strong)}.risk-grid-3{grid-template-columns:1fr}}
+    @media(max-width:680px){.perf-grid{grid-template-columns:1fr}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.score-main,.score-side{padding:22px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell navbar">
+    <a class="nav-logo" href="/" aria-label="Acerbre home"><img src="/assets/acerbre-logo.webp" alt="Acerbre"></a>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a aria-current="page" href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
+    <div class="nav-actions"><a class="btn-outline" href="#performance">Performance</a><button class="menu-button" type="button" aria-expanded="false">Menu</button></div>
+  </div></header>
+
+  <main id="main">
+    <section class="product-hero"><div class="shell product-hero-grid">
+      <div class="reveal"><div class="eyebrow">Acerbre system · Higher-risk profile</div><h1>Ber<span class="red">go</span></h1>
+        <p class="lede">A high-scaling algorithmic system built around frequent profit capture and asymmetric tail risk. The public record below shows the return and the cost of obtaining it.</p>
+        <div class="hero-actions"><a class="btn" href="#performance">View test results</a><a class="btn-outline" href="#risk">Understand the risk</a></div>
+        <div class="hero-specs"><div class="hero-spec"><span class="label">Backtest capital</span><strong>$100,000</strong></div><div class="hero-spec"><span class="label">Base risk</span><strong>5.0%</strong></div><div class="hero-spec"><span class="label">Window</span><strong>Jun 2024 — Aug 2026</strong></div></div>
+      </div>
+      <div class="hero-art bergo"><img class="pixel-art" src="/assets/bergo_pixel_asset.png" width="664" height="920" alt="Pixel artwork of Bergo"></div>
+    </div></section>
+
+    <section class="section" id="performance"><div class="shell">
+      <div class="section-head"><div><div class="eyebrow">Strategy tester evidence</div><h2>Return is only half the result.</h2></div><div><p class="lede">Four markets were tested from the same $100,000 starting capital with a 5% base-risk input. Bergo posts very high win rates, but losing trades are much larger than winning trades. Tail losses therefore determine whether a configuration is actually usable.</p><div class="bergo-note">MT5 Strategy Tester · M30 · 2024-06-01 to 2026-08-18 · withdrawals disabled · max exposure 5 lots. Historical simulations only; not forward returns or guarantees.</div></div></div>
+
+      <div class="perf-grid">
+        <article class="perf-card"><div class="market">US100 · Nasdaq 100</div><div class="big">+13.2%</div><div class="perf-label">Total net return</div><dl><div><dt>Max equity DD</dt><dd>13.42%</dd></div><div><dt>Profit factor</dt><dd>1.33</dd></div><div><dt>Sharpe</dt><dd>0.74</dd></div><div><dt>Win rate</dt><dd>94.88%</dd></div></dl><span class="risk-tag">Balanced case</span></article>
+        <article class="perf-card weak"><div class="market">US500 · S&amp;P 500</div><div class="big">+0.46%</div><div class="perf-label">Total net return</div><dl><div><dt>Max equity DD</dt><dd>3.83%</dd></div><div><dt>Profit factor</dt><dd>1.05</dd></div><div><dt>Sharpe</dt><dd>0.09</dd></div><div><dt>Win rate</dt><dd>89.79%</dd></div></dl><span class="risk-tag">Low realized edge</span></article>
+        <article class="perf-card"><div class="market">USOIL · WTI</div><div class="big">+48.8%</div><div class="perf-label">Total net return</div><dl><div><dt>Max equity DD</dt><dd>40.07%</dd></div><div><dt>Profit factor</dt><dd>1.44</dd></div><div><dt>Sharpe</dt><dd>1.13</dd></div><div><dt>Win rate</dt><dd>91.95%</dd></div></dl><span class="risk-tag red">Aggressive</span></article>
+        <article class="perf-card extreme"><div class="market">XAUUSD · Gold</div><div class="big">+252.7%</div><div class="perf-label">Total net return</div><dl><div><dt>Max equity DD</dt><dd>89.23%</dd></div><div><dt>Profit factor</dt><dd>1.31</dd></div><div><dt>Sharpe</dt><dd>0.60</dd></div><div><dt>Win rate</dt><dd>95.98%</dd></div></dl><span class="risk-tag red">Extreme tail risk</span></article>
+      </div>
+
+      <div class="scoreboard"><div class="score-main"><div class="kicker">Primary public case</div><h3>US100 · the balanced reference</h3><div class="metric-grid">
+        <div class="metric"><span>Net profit</span><strong>$13,166.77</strong></div><div class="metric"><span>Historical CAGR</span><strong>5.75%</strong></div><div class="metric"><span>Max equity DD</span><strong class="danger">13.42%</strong></div>
+        <div class="metric"><span>Profit factor</span><strong>1.33</strong></div><div class="metric"><span>Sharpe ratio</span><strong>0.74</strong></div><div class="metric"><span>Recovery factor</span><strong>0.85</strong></div>
+        <div class="metric"><span>Trades</span><strong>488</strong></div><div class="metric"><span>Average win</span><strong>$115.51</strong></div><div class="metric"><span>Average loss</span><strong class="danger">−$1,612.59</strong></div>
+      </div></div><aside class="score-side"><h3>What this means</h3><p>US100 is the cleanest balanced Bergo test in the set. It shows positive expectancy without the 40% drawdown seen in Oil or the near-ruin profile seen in Gold.</p><ul><li>Largest winning trade: <b>$3,828.91</b></li><li>Largest losing trade: <b>−$14,921.54</b></li><li>Average loss is about <b>14×</b> the average win</li><li>History quality: <b>73% real ticks</b></li></ul></aside></div>
+    </div></section>
+
+    <section class="section section-compact"><div class="shell"><div class="section-head"><div><div class="eyebrow">Cross-market comparison</div><h2>Four markets. Four different risk profiles.</h2></div><p class="lede">The useful question is not which market has the largest return. It is which return survives after drawdown, payoff asymmetry and test quality are considered.</p></div>
+      <div class="table-wrap"><table class="compare bergo-table"><thead><tr><th>Market</th><th>Total return</th><th>CAGR</th><th>Max equity DD</th><th>Profit factor</th><th>Sharpe</th><th>Win rate</th><th>Largest loss</th><th>History quality</th></tr></thead><tbody>
+        <tr><td><strong>US100</strong></td><td>+13.17%</td><td>5.75%</td><td>13.42%</td><td>1.33</td><td>0.74</td><td>94.88%</td><td>−$14,921.54</td><td>73% real ticks</td></tr>
+        <tr><td><strong>US500</strong></td><td>+0.46%</td><td>0.21%</td><td>3.83%</td><td>1.05</td><td>0.09</td><td>89.79%</td><td>−$3,500.05</td><td>73% real ticks</td></tr>
+        <tr><td><strong>USOIL</strong></td><td>+48.79%</td><td>19.68%</td><td class="danger">40.07%</td><td>1.44</td><td>1.13</td><td>91.95%</td><td class="danger">−$40,459.25</td><td>99% real ticks</td></tr>
+        <tr><td><strong>XAUUSD</strong></td><td>+252.68%</td><td>76.78%</td><td class="danger">89.23%</td><td>1.31</td><td>0.60</td><td>95.98%</td><td class="danger">−$310,318.50</td><td>99% real ticks</td></tr>
+      </tbody></table></div>
+    </div></section>
+
+    <section class="section" id="risk"><div class="shell"><div class="section-head"><div><div class="eyebrow">Risk architecture</div><h2>Bergo wins often. It can lose violently.</h2></div><p class="lede">That asymmetry is the defining feature of these tests. A 90–96% win rate is not safety when the average loss is many times larger than the average win.</p></div>
+      <div class="risk-grid-3"><article class="risk-box"><div class="n">01 · Payoff asymmetry</div><h3>Win rate is not enough.</h3><p>On US100, the average loss was about 14 times the average win. The edge survives only while losing events remain sufficiently rare.</p></article><article class="risk-box"><div class="n">02 · Market dependence</div><h3>Return and drawdown move together.</h3><p>US500 showed little edge; Oil produced materially higher returns with 40% drawdown; Gold produced huge returns with an 89% equity drawdown.</p></article><article class="risk-box"><div class="n">03 · Test quality</div><h3>Confidence is not uniform.</h3><p>Oil and Gold use 99% real-tick histories. US100 and US500 report 73% real ticks, so their exact figures deserve more conservative interpretation.</p></article></div>
+    </div></section>
+
+    <section class="risk-band"><div class="shell risk-grid"><h2>Capital at risk</h2><p>These are historical MT5 Strategy Tester simulations, not expected returns. Live spreads, slippage, broker execution, contract specifications and future market regimes can materially worsen results. The tested configurations produced maximum equity drawdowns ranging from 3.83% to 89.23%.</p></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>Bergo · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Historical strategy-tester results. No performance guarantee.</span></div></div></footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

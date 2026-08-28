@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03070d">
+  <meta name="description" content="AppleTree is Acerbre's multi-module MT5 execution system with a minimal client control surface and account-bound licensing.">
+  <title>AppleTree — Acerbre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell navbar">
+    <a class="nav-logo" href="/" aria-label="Acerbre home"><img src="/assets/acerbre-logo.webp" alt="Acerbre"></a>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a aria-current="page" href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
+    <div class="nav-actions"><a class="btn" href="/licensing/#appletree">License AppleTree</a><button class="menu-button" type="button" aria-expanded="false">Menu</button></div>
+  </div></header>
+
+  <main id="main">
+    <section class="product-hero">
+      <div class="shell product-hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">Acerbre system · MetaTrader 5</div>
+          <h1>Apple<span class="muted">Tree</span></h1>
+          <p class="lede">A multi-module intraday execution system. The commercial build keeps the research configuration internal and exposes one client-facing trading control: <strong class="red">RiskPercent</strong>.</p>
+          <div class="hero-actions"><a class="btn" href="/licensing/#appletree">AppleTree licensing</a><a class="btn-outline" href="#architecture">System architecture</a></div>
+          <div class="hero-specs">
+            <div class="hero-spec"><span class="label">Release</span><strong>v1.00 candidate</strong></div>
+            <div class="hero-spec"><span class="label">Runtime</span><strong>MT5 hedging</strong></div>
+            <div class="hero-spec"><span class="label">Control</span><strong>RiskPercent</strong></div>
+          </div>
+        </div>
+        <div class="hero-art appletree"><img class="pixel-art" src="/assets/appletree_pixel_asset.png" width="666" height="920" alt="Pixel artwork of AppleTree"></div>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="shell split">
+        <div class="sticky reveal"><div class="eyebrow">Product definition</div><h2>One portfolio runtime, multiple internal decision modules.</h2><p class="lede">The public description is intentionally structural rather than formulaic. Research thresholds and signal formulas remain part of the compiled implementation.</p></div>
+        <div class="stack">
+          <article class="panel reveal"><div class="panel-number">01 · Signal layer</div><h3>Independent entry logic</h3><p>AppleTree contains three separately triggered intraday sleeves. Each sleeve has its own market condition, directional rules and permitted trading window. A sleeve can remain inactive while another qualifies.</p></article>
+          <article class="panel reveal"><div class="panel-number">02 · Risk layer</div><h3>Shared risk scaling</h3><p>The user selects a single risk percentage. AppleTree scales the internal sleeve risk budgets from the validated base configuration rather than exposing dozens of tuning parameters.</p></article>
+          <article class="panel reveal"><div class="panel-number">03 · State layer</div><h3>Defined lifecycle rules</h3><p>Entries, stops, state exits, timed exits and hard-flat behavior are part of the strategy implementation. Licensing is not used as a substitute for position-risk management.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell split">
+        <div class="sticky reveal"><div class="eyebrow">Client surface</div><h2>Deliberately constrained.</h2><p class="lede">AppleTree is not distributed as a parameter playground. The commercial interface limits the user to the portfolio risk scale while validated strategy constants remain embedded in the build.</p></div>
+        <div class="reveal">
+          <table class="compare">
+            <tbody>
+              <tr><th>Public trading input</th><td><strong>RiskPercent</strong></td></tr>
+              <tr><th>Default scale</th><td>1.00 preserves the validated base risk geometry used by the commercial build.</td></tr>
+              <tr><th>Research configuration</th><td>Internal to the compiled EA; not exposed as client inputs.</td></tr>
+              <tr><th>Strategy Tester</th><td>Disabled in the commercial build. Internal QA uses a separate tester-enabled source.</td></tr>
+              <tr><th>Target runtime</th><td>MetaTrader 5 on a hedging account.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell split">
+        <div class="sticky reveal"><div class="eyebrow">Authorization</div><h2>Licensed to the account, not the machine.</h2><p class="lede">AppleTree's license identity is the product plus the MT5 account number. The broker server is deliberately not part of authorization.</p><a class="btn" href="/licensing/#appletree">Full licensing model</a></div>
+        <div class="license-flow reveal">
+          <article class="flow-step"><span class="panel-number">01</span><strong>Provision</strong><p>Rabiata authorizes an MT5 account for AppleTree. No client-visible serial key is required.</p></article>
+          <article class="flow-step"><span class="panel-number">02</span><strong>Validate</strong><p>The EA obtains a short-lived authorization lease and refreshes it periodically.</p></article>
+          <article class="flow-step"><span class="panel-number">03</span><strong>Revoke safely</strong><p>New exposure is blocked. Existing positions continue under normal exits and risk controls.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-compact"><div class="shell callout"><strong>Current release status:</strong> the v1.00 source compiles successfully. Runtime acceptance, licensing-state tests and controlled forward validation remain separate release checks.</div></section>
+    <section class="risk-band"><div class="shell risk-grid"><h2>Risk notice</h2><p>No performance promise is made on this page. Trading systems can lose money, and historical or simulated results do not guarantee future outcomes.</p></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>AppleTree · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Algorithmic execution software · MetaTrader 5</span></div></div></footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>
