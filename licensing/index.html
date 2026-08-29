@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#03070d">
-  <meta name="description" content="Monthly AppleTree and Bergo licensing linked to an MT5 broker account number and customer email.">
+  <meta name="description" content="Acerbre product licensing for AppleTree, Grimmwood Apple and Bergo. AppleTree and Grimmwood Apple are bound to product, MT5 account number and exact broker server.">
   <title>Licensing — Acerbre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><div class="shell navbar">
     <a class="nav-logo" href="/" aria-label="Acerbre home"><img src="/assets/acerbre-logo.webp" alt="Acerbre"></a>
-    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a aria-current="page" href="/licensing/">Licensing</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood Apple</a><a href="/bergo/">Bergo</a><a aria-current="page" href="/licensing/">Licensing</a></nav>
     <div class="nav-actions"><a class="btn" href="#setup">MT5 setup</a><button class="menu-button" type="button" aria-expanded="false">Menu</button></div>
   </div></header>
 
@@ -22,20 +22,20 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div class="reveal">
-          <div class="eyebrow">Monthly product access</div>
-          <h1>One licensing flow for <span class="muted">both systems.</span></h1>
-          <p class="lede">AppleTree and Bergo use the same monthly authorization service. Choose the product, send your MT5 broker account number and customer email, and Acerbre provisions the license.</p>
-          <div class="hero-actions"><a class="btn" href="#products">View monthly licenses</a><a class="btn-outline" href="#setup">MT5 setup</a></div>
+          <div class="eyebrow">Product-scoped access</div>
+          <h1>License the product to the <span class="muted">trading account.</span></h1>
+          <p class="lede">AppleTree and Grimmwood Apple use Rabiata's broker-bound authorization model: exact product + MT5 account number + exact broker server. Bergo remains on its legacy authorization path.</p>
+          <div class="hero-actions"><a class="btn" href="#products">View licenses</a><a class="btn-outline" href="#setup">MT5 setup</a></div>
         </div>
         <aside class="system-panel" aria-label="Licensing principles">
           <div class="system-panel-head"><span class="label">Access principles</span><span class="status"><span class="status-dot" aria-hidden="true"></span> Product scoped</span></div>
           <div class="system-panel-main">
-            <p class="system-wordmark">One monthly license.<span>Product + MT5 account number + customer email</span></p>
+            <p class="system-wordmark">Broker-bound products.<span>Product + MT5 account + exact ACCOUNT_SERVER</span></p>
             <div class="system-grid">
-              <div class="system-item"><span class="label">Term</span><strong>Monthly</strong></div>
-              <div class="system-item"><span class="label">Products</span><strong>AppleTree + Bergo</strong></div>
-              <div class="system-item"><span class="label">You provide</span><strong>Account + email</strong></div>
-              <div class="system-item"><span class="label">Serial key</span><strong>Not required</strong></div>
+              <div class="system-item"><span class="label">AppleTree</span><strong>Broker bound</strong></div>
+              <div class="system-item"><span class="label">Grimmwood Apple</span><strong>Broker bound</strong></div>
+              <div class="system-item"><span class="label">Machine / VPS</span><strong>Not identity</strong></div>
+              <div class="system-item"><span class="label">Client-entered key</span><strong>Not required for broker-bound builds</strong></div>
             </div>
           </div>
         </aside>
@@ -44,48 +44,48 @@
 
     <section class="section" id="products">
       <div class="shell split">
-        <div class="sticky reveal"><div class="eyebrow">AppleTree + Bergo</div><h2>Monthly, keyless, account-bound.</h2><p class="lede">Both products use the same flow. Your product choice, MT5 broker account number, and customer email are used to provision the monthly license. No machine fingerprint or client-entered serial key is required.</p></div>
+        <div class="sticky reveal"><div class="eyebrow">Acerbre products</div><h2>Separate entitlements. Separate systems.</h2><p class="lede">A license for one product does not authorize another. AppleTree and Grimmwood Apple are separately keyed in the Rabiata backend even when the same MT5 account and broker server are used.</p></div>
         <div class="reveal">
           <table class="compare">
             <tbody>
               <tr id="appletree"><th>AppleTree monthly license</th><td><strong>US$1,299 / month</strong></td></tr>
+              <tr id="grimmwood"><th>Grimmwood Apple monthly license</th><td><strong>US$506 / month</strong></td></tr>
               <tr id="bergo"><th>Bergo monthly license</th><td><strong>US$149 / month</strong></td></tr>
-              <tr><th>Required details</th><td>Product, MT5 broker account number, and customer email.</td></tr>
-              <tr><th>Broker server</th><td>Not required for the license identity.</td></tr>
-              <tr><th>Machine / VPS</th><td>Not an authorization condition.</td></tr>
-              <tr><th>Client license key</th><td>Not required for either product.</td></tr>
-              <tr><th>Session model</th><td>Short-lived server-issued lease with periodic refresh.</td></tr>
-              <tr><th>Expired monthly term</th><td>Stops the licensed product from opening new exposure.</td></tr>
-              <tr><th>Positions already open</th><td>Remain under the EA's normal stop, state-exit, timed-exit and hard-flat management.</td></tr>
+              <tr><th>AppleTree / Grimmwood identity</th><td>Product + MT5 account number + exact broker server.</td></tr>
+              <tr><th>Customer email</th><td>Used for ordering/contact only; it is not part of broker-bound authorization.</td></tr>
+              <tr><th>Machine / VPS</th><td>Not an authorization condition for broker-bound products.</td></tr>
+              <tr><th>Broker server</th><td>Required and exact for AppleTree and Grimmwood Apple.</td></tr>
+              <tr><th>Session model</th><td>Short-lived server-issued authorization with periodic refresh.</td></tr>
+              <tr><th>Expired or revoked</th><td>Blocks new exposure while existing positions remain under normal strategy risk management.</td></tr>
             </tbody>
           </table>
-          <div class="hero-actions"><a class="btn" href="mailto:contact@rabiata.com?subject=Acerbre%20monthly%20license">Email account details</a></div>
+          <div class="hero-actions"><a class="btn" href="mailto:contact@rabiata.com?subject=Acerbre%20product%20license">Request a product license</a></div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="shell">
-        <div class="section-head reveal"><div><div class="eyebrow">Activation flow</div><h2>Send the account. Receive the license.</h2></div><p class="lede">The same three steps apply to AppleTree and Bergo. The license remains active for the paid monthly term.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">Broker-bound activation</div><h2>Choose. Identify. Activate.</h2></div><p class="lede">For AppleTree and Grimmwood Apple the EA obtains the same account and broker-server identifiers from MetaTrader that Acerbre provisions on the server.</p></div>
         <div class="license-flow reveal">
-          <article class="flow-step"><span class="panel-number">01 · Choose</span><strong>AppleTree or Bergo</strong><p>Select the product and confirm the monthly price.</p></article>
-          <article class="flow-step"><span class="panel-number">02 · Send</span><strong>Account number + email</strong><p>Email the MT5 broker account number and the customer email used for the order.</p></article>
-          <article class="flow-step"><span class="panel-number">03 · Activate</span><strong>Receive the monthly license</strong><p>Acerbre provisions the selected product for that account and confirms activation by email.</p></article>
+          <article class="flow-step"><span class="panel-number">01 · Choose</span><strong>AppleTree or Grimmwood Apple</strong><p>Select the product and confirm the monthly price.</p></article>
+          <article class="flow-step"><span class="panel-number">02 · Send</span><strong>Account number + exact server</strong><p>Provide the MT5 account number and the broker server string shown by the terminal.</p></article>
+          <article class="flow-step"><span class="panel-number">03 · Activate</span><strong>Receive authorization</strong><p>Rabiata provisions that exact product/account/server combination.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section" id="setup">
       <div class="shell split">
-        <div class="sticky reveal"><div class="eyebrow">MT5 setup</div><h2>One manual terminal permission.</h2><p class="lede">MetaTrader 5 requires users to explicitly allow WebRequest access to the licensing origin. The EA cannot silently add this permission itself.</p></div>
+        <div class="sticky reveal"><div class="eyebrow">MT5 setup</div><h2>One manual terminal permission.</h2><p class="lede">MetaTrader 5 requires users to explicitly allow WebRequest access to the Rabiata licensing origin. The EA cannot silently add this permission itself.</p></div>
         <div class="panel reveal">
-          <div class="panel-number">AppleTree and Bergo setup</div>
+          <div class="panel-number">AppleTree / Grimmwood Apple setup</div>
           <ol class="panel-list">
             <li>Open <strong>Tools → Options → Expert Advisors</strong>.</li>
             <li>Enable WebRequest for the Rabiata licensing URL supplied with the product.</li>
             <li>Attach the licensed EA to the intended MT5 chart and enable Algo Trading.</li>
           </ol>
-          <p class="callout">The EA reads the account identifier from the running terminal. There is no license-key field to complete.</p>
+          <p class="callout">The EA reads <strong>ACCOUNT_LOGIN</strong> and <strong>ACCOUNT_SERVER</strong> from the running terminal. There is no customer-entered license key for these broker-bound products.</p>
         </div>
       </div>
     </section>
@@ -93,7 +93,7 @@
     <section class="risk-band"><div class="shell risk-grid"><h2>Infrastructure boundary</h2><p>The licensing service authorizes software use. It does not hold broker credentials, place discretionary trades, or guarantee strategy performance.</p></div></section>
   </main>
 
-  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>Licensing infrastructure by Rabiata LLC.</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Product-scoped authorization infrastructure</span></div></div></footer>
+  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>Licensing infrastructure by Rabiata LLC.</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood Apple</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Product-scoped authorization infrastructure</span></div></div></footer>
   <script src="/assets/site.js?v=20260828c"></script>
 </body>
 </html>
