@@ -117,7 +117,7 @@ components:
 
 **Creative North Star: "The Market Observatory"**
 
-Acerbre should feel like entering a nocturnal research office built to examine markets rather than sell a fantasy about them. The world is disciplined, premium, technical, and evidence-first: midnight surfaces hold steel rules, paper-white conclusions, and a single red decision signal. General pages rely on typography, spacing, and evidence—not candlestick scenery or generic market patterns. AppleTree and Bergo artwork is reserved for the respective product page.
+Acerbre should feel like entering a nocturnal research office built to examine markets rather than sell a fantasy about them. The world is disciplined, premium, technical, and evidence-first: midnight surfaces hold steel rules, paper-white conclusions, and a single red decision signal. General pages rely on typography, spacing, and evidence—not candlestick scenery or generic market patterns. AppleTree, Grimmwood Apple, and Bergo artwork is reserved for the homepage product choice and the respective product page; the supplied Grimmwood market imagery is an intentional part of that product identity, not a general site motif.
 
 The composition is editorial rather than modular. Large assertions share asymmetrical grids with evidence, risk, and operating detail; thin borders create structure without turning every idea into a generic card. Motion reads as observation—a scan, trace, resolving image, or measured drift—and the full meaning remains available when animation is absent.
 
@@ -127,7 +127,7 @@ The composition is editorial rather than modular. Large assertions share asymmet
 - Bold Manrope assertions paired with compact DM Mono evidence labels.
 - Square geometry, thin rules, and restrained tonal depth.
 - Product artwork used only where that product is being evaluated: the homepage systems section and its own page.
-- Product-neutral precision-laboratory artwork ornaments the general business story without borrowing AppleTree or Bergo symbols.
+- Product-neutral precision-laboratory artwork ornaments the general business story without borrowing AppleTree, Grimmwood Apple, or Bergo symbols.
 - Return, limitation, and risk presented in the same visual field.
 - Responsive asymmetry that becomes a clear single-column sequence on narrow screens.
 
@@ -251,7 +251,7 @@ The method rail is a signature observation sequence: short mono verbs joined by 
 
 ### Product Card
 
-The homepage product card pairs the product promise, risk profile, monthly licensing metadata, explanation, and price with the corresponding AppleTree or Bergo artwork. The same artwork may lead the corresponding product page, but it must not leak into service, method, evidence, partnership, or licensing illustrations.
+The homepage product card pairs the product promise, research lineage, risk profile, licensing metadata, explanation, and commercial status with the corresponding AppleTree, Grimmwood Apple, or Bergo artwork. The same artwork may lead the corresponding product page, but it must not leak into service, method, evidence, partnership, or licensing illustrations.
 
 ### Risk Band
 
@@ -264,7 +264,7 @@ The risk band is a chapter-level disclosure, not a footer disclaimer. It uses th
 - **Do** let evidence, limitations, and risk share the same visual field as performance and purchase actions.
 - **Do** use red only for action, active signal, plotted emphasis, or real risk status.
 - **Do** build hierarchy with asymmetrical editorial grids, measured spacing, thin borders, and tonal navy layers.
-- **Do** reserve AppleTree and Bergo artwork for the homepage product choice and their respective product pages, with descriptive alternative text.
+- **Do** reserve AppleTree, Grimmwood Apple, and Bergo artwork for the homepage product choice and their respective product pages, with descriptive alternative text.
 - **Do** use the precision-laboratory asset system to distinguish research, engineering, consulting, education, testing, execution, risk, evidence, and partnership chapters.
 - **Do** keep every message and interaction understandable with animation disabled, and honor `prefers-reduced-motion`.
 - **Do** preserve keyboard access, visible focus, readable contrast, and a coherent mobile reading order.
@@ -276,4 +276,4 @@ The risk band is a chapter-level disclosure, not a footer disclaimer. It uses th
 - **Don't** separate return from drawdown, historical-simulation limits, product boundaries, or capital-at-risk language.
 - **Don't** use animation as spectacle, as the sole carrier of meaning, or as a prerequisite for content visibility.
 - **Don't** use generic finance photography, stock candlestick backgrounds, decorative market patterns, or invented customer proof.
-- **Don't** repeat AppleTree or Bergo symbols outside the homepage product choice and the corresponding product page.
+- **Don't** repeat AppleTree, Grimmwood Apple, or Bergo symbols outside the homepage product choice and the corresponding product page.

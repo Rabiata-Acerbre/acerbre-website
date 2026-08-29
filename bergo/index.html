@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#03070d">
-  <meta name="description" content="Bergo performance and risk: MT5 strategy-tester results across US100, BTCUSD, USOIL and XAUUSD, including the BTC failure case.">
+  <meta name="description" content="Bergo is Acerbre's mathematics-first non-ergodic system, with MT5 evidence across US100, BTCUSD, USOIL and XAUUSD—including the BTC failure case.">
   <title>Bergo — Acerbre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/site.css?v=20260828b">
+  <link rel="stylesheet" href="/assets/site.css?v=20260829a">
   <style>
     .bergo-note{margin-top:20px;padding:15px 18px;border-block:1px solid var(--line-strong);background:#09121b;color:#9eabb9;font:11px/1.65 var(--mono)}
     .perf-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line-strong);border-left:1px solid var(--line-strong);margin-top:46px}
@@ -35,22 +35,22 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><div class="shell navbar">
     <a class="nav-logo" href="/" aria-label="Acerbre home"><img src="/assets/acerbre-logo.webp" alt="Acerbre"></a>
-    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a aria-current="page" href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood</a><a aria-current="page" href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
     <div class="nav-actions"><a class="btn" href="/licensing/#bergo">License Bergo</a><button class="menu-button" type="button" aria-expanded="false">Menu</button></div>
   </div></header>
 
   <main id="main">
     <section class="product-hero"><div class="shell product-hero-grid">
-      <div class="reveal"><div class="eyebrow">Acerbre system · Higher-risk profile</div><h1>Ber<span class="red">go</span></h1>
-        <p class="lede">A high-scaling algorithmic system built around frequent profit capture and asymmetric tail risk. The public record below shows the return and the cost of obtaining it.</p>
+      <div class="reveal"><div class="eyebrow">Mathematical lineage · Higher-risk profile</div><h1>Ber<span class="red">go</span></h1>
+        <p class="lede">A mathematics-first system built from non-ergodicity: compounding paths, payoff asymmetry, and survival risk. Unlike AppleTree and Grimmwood Apple, Bergo is not an NQ-specific mechanical research branch.</p>
         <div class="hero-actions"><a class="btn" href="/licensing/#bergo">License Bergo · US$149/month</a><a class="btn-outline" href="#performance">View test results</a></div>
-        <div class="hero-specs"><div class="hero-spec"><span class="label">Backtest capital</span><strong>$100,000</strong></div><div class="hero-spec"><span class="label">Base risk</span><strong>5.0%</strong></div><div class="hero-spec"><span class="label">Window</span><strong>Jun 2024 — Aug 2026</strong></div></div>
+        <div class="hero-specs"><div class="hero-spec"><span class="label">Lineage</span><strong>Non-ergodic math</strong></div><div class="hero-spec"><span class="label">Base risk</span><strong>5.0%</strong></div><div class="hero-spec"><span class="label">Window</span><strong>Jun 2024 — Aug 2026</strong></div></div>
       </div>
       <div class="hero-art bergo"><img class="pixel-art" src="/assets/bergo_pixel_asset.png" width="664" height="920" alt="Pixel artwork of Bergo"></div>
     </div></section>
 
     <section class="section" id="performance"><div class="shell">
-      <div class="section-head"><div><div class="eyebrow">Strategy tester evidence</div><h2>Return is only half the result.</h2></div><div><p class="lede">Four markets were tested from the same $100,000 starting capital with a 5% base-risk input. Bergo posts very high win rates, but losing trades are much larger than winning trades. Tail losses therefore determine whether a configuration is actually usable.</p><div class="bergo-note">MT5 Strategy Tester · M30 · 2024-06-01 to 2026-08-18 · withdrawals disabled · max exposure 5 lots. Historical simulations only; not forward returns or guarantees.</div></div></div>
+      <div class="section-head"><div><div class="eyebrow">Strategy tester evidence</div><h2>Time paths matter more than averages.</h2></div><div><p class="lede">Four markets were tested from the same $100,000 starting capital with a 5% base-risk input. Bergo posts very high win rates, but losing trades are much larger than winning trades. In a non-ergodic system, the sequence and magnitude of losses determine whether capital survives long enough for an average to matter.</p><div class="bergo-note">MT5 Strategy Tester · M30 · 2024-06-01 to 2026-08-18 · withdrawals disabled · max exposure 5 lots. Historical simulations only; not forward returns or guarantees.</div></div></div>
 
       <div class="perf-grid">
         <article class="perf-card"><div class="market">US100 · Nasdaq 100</div><div class="big">+3.94%</div><div class="perf-label">Total net return</div><dl><div><dt>Max equity DD</dt><dd>4.41%</dd></div><div><dt>Profit factor</dt><dd>1.10</dd></div><div><dt>Sharpe</dt><dd>1.51</dd></div><div><dt>Win rate</dt><dd>80.11%</dd></div></dl><span class="risk-tag">Lowest drawdown positive case</span></article>
@@ -79,12 +79,12 @@
       <div class="risk-grid-3"><article class="risk-box"><div class="n">01 · Payoff asymmetry</div><h3>Win rate is not enough.</h3><p>On US100, the average loss was about 3.7 times the average win. The edge survives only while losing events remain sufficiently rare.</p></article><article class="risk-box"><div class="n">02 · Failure case</div><h3>BTC breaks the strategy.</h3><p>BTC lost 32.28% despite winning 72.24% of trades. Its 0.80 profit factor and 48.51% maximum equity drawdown make the failure visible.</p></article><article class="risk-box"><div class="n">03 · Test quality</div><h3>Confidence is not uniform.</h3><p>BTC reports 100% real ticks; Oil and Gold report 99%. US100 reports 73% real ticks, so its exact figures deserve more conservative interpretation.</p></article></div>
     </div></section>
 
-    <section class="section-compact license-decision" id="license"><div class="shell license-decision-grid"><h2>Bergo is US$149 per month.</h2><div><p>Bergo uses the same monthly license system as AppleTree. Send the MT5 broker account number and your email address to receive activation.</p><a class="btn" href="mailto:contact@rabiata.com?subject=Bergo%20monthly%20license">Request a Bergo license</a></div></div></section>
+    <section class="section-compact license-decision" id="license"><div class="shell license-decision-grid"><h2>Bergo is US$149 per month.</h2><div><p>Bergo uses Acerbre's account-bound monthly authorization system. Send the MT5 broker account number and your email address to receive activation.</p><a class="btn" href="mailto:contact@rabiata.com?subject=Bergo%20monthly%20license">Request a Bergo license</a></div></div></section>
 
     <section class="risk-band"><div class="shell risk-grid"><h2>Capital at risk</h2><p>These are historical MT5 Strategy Tester simulations, not expected returns. Live spreads, slippage, broker execution, contract specifications and future market regimes can materially worsen results. The supplied tests include a −32.28% BTC loss and maximum equity drawdowns ranging from 4.41% to 48.51%.</p></div></section>
   </main>
 
-  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>Bergo · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Historical strategy-tester results. No performance guarantee.</span></div></div></footer>
+  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>Bergo · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Historical strategy-tester results. No performance guarantee.</span></div></div></footer>
   <script src="/assets/site.js?v=20260828c"></script>
 </body>
 </html>

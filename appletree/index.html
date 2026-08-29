@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#03070d">
-  <meta name="description" content="AppleTree is Acerbre's multi-module MT5 execution system, available through a monthly license linked to an MT5 broker account and customer email.">
+  <meta name="description" content="AppleTree is Acerbre's multi-module mechanical NQ system, tested on US100p and available through an account-bound monthly MT5 license.">
   <title>AppleTree — Acerbre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/site.css?v=20260828b">
+  <link rel="stylesheet" href="/assets/site.css?v=20260829a">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><div class="shell navbar">
     <a class="nav-logo" href="/" aria-label="Acerbre home"><img src="/assets/acerbre-logo.webp" alt="Acerbre"></a>
-    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a aria-current="page" href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a aria-current="page" href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
     <div class="nav-actions"><a class="btn" href="/licensing/#appletree">License AppleTree</a><button class="menu-button" type="button" aria-expanded="false">Menu</button></div>
   </div></header>
 
@@ -22,12 +22,12 @@
     <section class="product-hero">
       <div class="shell product-hero-grid">
         <div class="reveal">
-          <div class="eyebrow">Acerbre system · MetaTrader 5</div>
+          <div class="eyebrow">Mechanical NQ family · MetaTrader 5</div>
           <h1>Apple<span class="muted">Tree</span></h1>
-          <p class="lede">A multi-module intraday execution system. The commercial build keeps the research configuration internal and exposes one client-facing trading control: <strong class="red">RiskPercent</strong>.</p>
+          <p class="lede">A multi-module intraday system built from mechanical NQ research. AppleTree and Grimmwood Apple share the same research family, but express that edge through distinct rule sets.</p>
           <div class="hero-actions"><a class="btn" href="/licensing/#appletree">License AppleTree · US$1,299/month</a><a class="btn-outline" href="#performance">View test evidence</a></div>
           <div class="hero-specs">
-            <div class="hero-spec"><span class="label">Release</span><strong>v1.00 candidate</strong></div>
+            <div class="hero-spec"><span class="label">Lineage</span><strong>Mechanical NQ</strong></div>
             <div class="hero-spec"><span class="label">Runtime</span><strong>MT5 hedging</strong></div>
             <div class="hero-spec"><span class="label">Control</span><strong>RiskPercent</strong></div>
           </div>
@@ -38,7 +38,7 @@
 
     <section class="section" id="architecture">
       <div class="shell split">
-        <div class="sticky reveal"><div class="eyebrow">Product definition</div><h2>One portfolio runtime, multiple internal decision modules.</h2><p class="lede">The public description is intentionally structural rather than formulaic. Research thresholds and signal formulas remain part of the compiled implementation.</p></div>
+        <div class="sticky reveal"><div class="eyebrow">Product definition</div><h2>One NQ research branch, multiple internal decision modules.</h2><p class="lede">AppleTree is the multi-sleeve branch of Acerbre's mechanical NQ family. The public description is structural rather than formulaic; research thresholds and signal formulas remain part of the compiled implementation.</p></div>
         <div class="stack">
           <article class="panel reveal"><div class="panel-number">01 · Signal layer</div><h3>Independent entry logic</h3><p>AppleTree contains three separately triggered intraday sleeves. Each sleeve has its own market condition, directional rules and permitted trading window. A sleeve can remain inactive while another qualifies.</p></article>
           <article class="panel reveal"><div class="panel-number">02 · Risk layer</div><h3>Shared risk scaling</h3><p>The user selects a single risk percentage. AppleTree scales the internal sleeve risk budgets from the validated base configuration rather than exposing dozens of tuning parameters.</p></article>
@@ -76,26 +76,26 @@
       <div class="shell balance-instrument">
         <figure class="balance-figure reveal">
           <div class="balance-heading">
-            <div><span>Historical balance</span><strong>US$100,000 → US$120,328.29</strong></div>
-            <p>+20.33% net result</p>
+            <div><span>Historical balance</span><strong>US$100,000 → US$125,820.44</strong></div>
+            <p>+25.82% net result</p>
           </div>
           <svg class="balance-chart" viewBox="0 0 1000 320" role="img" aria-labelledby="balance-title balance-desc">
             <title id="balance-title">AppleTree historical tester balance curve</title>
-            <desc id="balance-desc">The simulated balance begins at one hundred thousand US dollars and ends at one hundred twenty thousand three hundred twenty-eight dollars and twenty-nine cents.</desc>
+            <desc id="balance-desc">The simulated balance begins at one hundred thousand US dollars and ends at one hundred twenty-five thousand eight hundred twenty dollars and forty-four cents.</desc>
             <g class="chart-grid" aria-hidden="true"><path d="M12 62H988M12 136H988M12 210H988M12 284H988"/><path d="M12 18V302M337 18V302M663 18V302M988 18V302"/></g>
-            <path class="balance-line" pathLength="1" d="M12.0,282.4 L20.2,280.7 L28.4,265.1 L36.6,260.5 L44.8,254.0 L53.0,240.9 L61.2,234.6 L69.4,222.2 L77.6,224.1 L85.8,220.6 L94.0,223.9 L102.2,216.5 L110.4,211.5 L118.6,206.1 L126.8,202.1 L135.0,200.5 L143.2,199.4 L151.4,199.6 L159.6,203.1 L167.8,200.7 L176.0,199.2 L184.2,197.8 L192.4,200.2 L200.6,193.7 L208.8,188.6 L217.0,188.0 L225.2,185.9 L233.4,191.4 L241.6,190.5 L249.8,187.4 L258.1,185.2 L266.3,184.0 L274.5,184.7 L282.7,184.1 L290.9,185.0 L299.1,179.9 L307.3,184.1 L315.5,178.0 L323.7,175.4 L331.9,173.9 L340.1,172.2 L348.3,166.7 L356.5,157.6 L364.7,159.7 L372.9,157.1 L381.1,155.4 L389.3,139.2 L397.5,134.3 L405.7,131.6 L413.9,117.9 L422.1,119.5 L430.3,118.4 L438.5,119.6 L446.7,120.1 L454.9,120.5 L463.1,130.7 L471.3,128.3 L479.5,131.3 L487.7,132.7 L495.9,132.6 L504.1,129.4 L512.3,128.1 L520.5,131.4 L528.7,131.9 L536.9,124.9 L545.1,126.8 L553.3,125.6 L561.5,124.4 L569.7,119.9 L577.9,113.5 L586.1,109.5 L594.3,107.5 L602.5,105.6 L610.7,109.5 L618.9,114.6 L627.1,118.6 L635.3,112.2 L643.5,109.3 L651.7,112.0 L659.9,102.9 L668.1,106.3 L676.3,105.5 L684.5,103.2 L692.7,105.6 L700.9,99.4 L709.1,98.4 L717.3,97.7 L725.5,99.6 L733.7,76.7 L741.9,74.5 L750.2,68.8 L758.4,70.0 L766.6,76.1 L774.8,76.8 L783.0,79.1 L791.2,86.8 L799.4,86.3 L807.6,88.1 L815.8,97.8 L824.0,100.9 L832.2,101.5 L840.4,89.2 L848.6,90.0 L856.8,84.1 L865.0,79.3 L873.2,81.0 L881.4,73.9 L889.6,66.7 L897.8,57.3 L906.0,64.1 L914.2,57.8 L922.4,59.4 L930.6,56.3 L938.8,56.4 L947.0,46.0 L955.2,45.9 L963.4,38.9 L971.6,41.3 L979.8,38.5 L988.0,43.1"/>
-            <g class="chart-points" aria-hidden="true"><circle cx="12" cy="282.4" r="5"/><circle cx="988" cy="43.1" r="6"/></g>
+            <path class="balance-line" pathLength="1" d="M12.0,282.4 L20.2,274.6 L28.4,267.0 L36.6,266.9 L44.8,255.2 L53.0,257.3 L61.2,251.5 L69.4,253.0 L77.6,252.5 L85.8,254.3 L94.0,255.4 L102.2,254.3 L110.4,250.8 L118.6,252.6 L126.8,241.5 L135.0,236.2 L143.2,235.8 L151.4,236.3 L159.6,230.9 L167.8,232.0 L176.0,234.4 L184.2,232.0 L192.4,231.8 L200.6,230.1 L208.8,227.8 L217.0,227.0 L225.2,228.4 L233.4,223.4 L241.6,224.9 L249.8,224.0 L258.1,222.3 L266.3,219.5 L274.5,214.5 L282.7,212.8 L290.9,208.6 L299.1,175.3 L307.3,179.4 L315.5,177.7 L323.7,172.0 L331.9,173.3 L340.1,154.6 L348.3,155.2 L356.5,153.7 L364.7,138.6 L372.9,142.4 L381.1,143.4 L389.3,146.4 L397.5,151.0 L405.7,156.5 L413.9,160.0 L422.1,164.7 L430.3,168.1 L438.5,171.4 L446.7,166.3 L454.9,166.4 L463.1,170.3 L471.3,169.3 L479.5,177.6 L487.7,176.4 L495.9,173.8 L504.1,173.1 L512.3,172.9 L520.5,165.7 L528.7,160.2 L536.9,143.1 L545.1,130.7 L553.3,131.8 L561.5,127.6 L569.7,137.2 L577.9,142.6 L586.1,148.0 L594.3,151.9 L602.5,157.3 L610.7,149.8 L618.9,145.6 L627.1,135.1 L635.3,135.3 L643.5,133.1 L651.7,138.9 L659.9,136.6 L668.1,139.8 L676.3,139.0 L684.5,138.3 L692.7,137.4 L700.9,140.1 L709.1,122.1 L717.3,118.1 L725.5,120.8 L733.7,116.8 L741.9,120.2 L750.2,122.5 L758.4,120.8 L766.6,123.2 L774.8,129.2 L783.0,128.9 L791.2,130.3 L799.4,142.0 L807.6,148.7 L815.8,150.1 L824.0,143.4 L832.2,103.4 L840.4,101.0 L848.6,98.5 L856.8,93.2 L865.0,97.0 L873.2,95.4 L881.4,81.2 L889.6,74.9 L897.8,74.0 L906.0,70.4 L914.2,69.5 L922.4,69.0 L930.6,71.1 L938.8,66.1 L947.0,56.2 L955.2,37.6 L963.4,39.4 L971.6,41.4 L979.8,39.1 L988.0,42.8"/>
+            <g class="chart-points" aria-hidden="true"><circle cx="12" cy="282.4" r="5"/><circle cx="988" cy="42.8" r="6"/></g>
           </svg>
           <figcaption><span>01 Jun 2024</span><span>Historical MT5 simulation</span><span>18 Aug 2026</span></figcaption>
         </figure>
 
         <dl class="result-ledger reveal" aria-label="AppleTree test summary">
-          <div><dt>Total net profit</dt><dd>US$20,328.29</dd></div>
-          <div class="risk-reading"><dt>Maximum equity drawdown</dt><dd>2.67% <small>US$3,164.02</small></dd></div>
-          <div><dt>Profit factor</dt><dd>2.04</dd></div>
-          <div><dt>Recovery factor</dt><dd>6.42</dd></div>
-          <div><dt>Total trades</dt><dd>297</dd></div>
-          <div><dt>Winning trades</dt><dd>53.54%</dd></div>
+          <div><dt>Total net profit</dt><dd>US$25,820.44</dd></div>
+          <div class="risk-reading"><dt>Maximum equity drawdown</dt><dd>5.15% <small>US$6,021.85</small></dd></div>
+          <div><dt>Profit factor</dt><dd>1.96</dd></div>
+          <div><dt>Recovery factor</dt><dd>4.29</dd></div>
+          <div><dt>Total trades</dt><dd>273</dd></div>
+          <div><dt>Winning trades</dt><dd>53.48%</dd></div>
         </dl>
       </div>
 
@@ -104,12 +104,12 @@
           <h3>What was tested</h3>
           <table>
             <tbody>
-              <tr><th>Internal report identifier</th><td>LastDance_Production_v4_00</td></tr>
+              <tr><th>Internal report identifier</th><td>AppleTree_Test_v1_01</td></tr>
               <tr><th>Instrument / timeframe</th><td>US100p · M30</td></tr>
               <tr><th>Initial deposit / leverage</th><td>US$100,000 · 1:100</td></tr>
               <tr><th>History quality</th><td>73% real ticks · 91,298,806 ticks</td></tr>
               <tr><th>Test account costs</th><td>Relatively high spread · US$0 separate commission</td></tr>
-              <tr><th>Report activity</th><td>297 trades · 594 deals</td></tr>
+              <tr><th>Report activity</th><td>273 trades · 546 deals</td></tr>
             </tbody>
           </table>
         </div>
@@ -118,7 +118,7 @@
 
     <section class="section">
       <div class="shell split">
-        <div class="sticky reveal"><div class="eyebrow">Monthly authorization</div><h2>Your account number and email establish the license.</h2><p class="lede">Send Acerbre the MT5 broker account number and the email used for the order. AppleTree and Bergo use the same monthly authorization system; no machine fingerprint or serial key is required.</p><a class="btn" href="/licensing/#appletree">Full licensing model</a></div>
+        <div class="sticky reveal"><div class="eyebrow">Monthly authorization</div><h2>Your account number and email establish the license.</h2><p class="lede">Send Acerbre the MT5 broker account number and the email used for the order. AppleTree and Bergo use the same monthly authorization infrastructure; no machine fingerprint or serial key is required.</p><a class="btn" href="/licensing/#appletree">Full licensing model</a></div>
         <div class="license-flow reveal">
           <article class="flow-step"><span class="panel-number">01</span><strong>Send your details</strong><p>Provide AppleTree, your MT5 broker account number, and your customer email.</p></article>
           <article class="flow-step"><span class="panel-number">02</span><strong>Receive activation</strong><p>Acerbre provisions the monthly license for that product and account.</p></article>
@@ -132,7 +132,7 @@
     <section class="risk-band"><div class="shell risk-grid"><h2>Risk notice</h2><p>No performance promise is made on this page. Trading systems can lose money, and historical or simulated results do not guarantee future outcomes.</p></div></section>
   </main>
 
-  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>AppleTree · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Algorithmic execution software · MetaTrader 5</span></div></div></footer>
+  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>AppleTree · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Algorithmic execution software · MetaTrader 5</span></div></div></footer>
   <script src="/assets/site.js?v=20260828c"></script>
 </body>
 </html>
