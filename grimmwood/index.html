@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03070d">
+  <meta name="description" content="Grimmwood Apple is Acerbre's NQ-focused mechanical intraday MT5 system, built around explicit market-state rules rather than behavioral prediction.">
+  <title>Grimmwood Apple — Acerbre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css?v=20260828b">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell navbar">
+    <a class="nav-logo" href="/" aria-label="Acerbre home"><img src="/assets/acerbre-logo.webp" alt="Acerbre"></a>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a aria-current="page" href="/grimmwood/">Grimmwood Apple</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav>
+    <div class="nav-actions"><a class="btn" href="/licensing/#grimmwood">License Grimmwood</a><button class="menu-button" type="button" aria-expanded="false">Menu</button></div>
+  </div></header>
+
+  <main id="main">
+    <section class="product-hero">
+      <div class="shell product-hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">Acerbre system · NQ-first · MetaTrader 5</div>
+          <h1>Grimmwood <span class="muted">Apple</span></h1>
+          <p class="lede">A mechanical intraday edge designed around NQ. Grimmwood Apple was not conceived as a behavioral model of traders, sentiment, or crowd psychology; it encodes explicit market-state conditions and executes them mechanically.</p>
+          <div class="hero-actions"><a class="btn" href="/licensing/#grimmwood">License Grimmwood Apple · US$506/month</a><a class="btn-outline" href="#performance">View test evidence</a></div>
+          <div class="hero-specs">
+            <div class="hero-spec"><span class="label">Design target</span><strong>NQ</strong></div>
+            <div class="hero-spec"><span class="label">Edge thesis</span><strong>Mechanical</strong></div>
+            <div class="hero-spec"><span class="label">Runtime</span><strong>MT5</strong></div>
+          </div>
+        </div>
+        <div class="hero-art"><img class="pixel-art" src="/assets/grimmwood_apple_asset.svg" width="666" height="920" alt="Pixel artwork of the Grimmwood Apple system"></div>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="shell split">
+        <div class="sticky reveal"><div class="eyebrow">System thesis</div><h2>A mechanical edge, not a behavioral story.</h2><p class="lede">Grimmwood Apple is built around repeatable price-state conditions, defined timing, explicit risk and deterministic exits. It does not need a narrative about what market participants are feeling.</p></div>
+        <div class="stack">
+          <article class="panel reveal"><div class="panel-number">01 · Market</div><h3>Designed for NQ</h3><p>The strategy was conceived for Nasdaq-100 futures behavior. Its logic is aimed at a highly liquid, fast intraday market where timing and mechanical state transitions matter.</p></article>
+          <article class="panel reveal"><div class="panel-number">02 · Edge</div><h3>Rules over interpretation</h3><p>The system reacts to measurable market conditions. It is not a discretionary sentiment engine and does not attempt to infer fear, greed, positioning narratives or trader psychology.</p></article>
+          <article class="panel reveal"><div class="panel-number">03 · Execution</div><h3>Fixed lifecycle</h3><p>Entry qualification, sizing, stops, timed exits and state exits are codified. Once a condition is met, execution is mechanical rather than interpretive.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section appletree-evidence" id="performance" aria-labelledby="grimmwood-performance-title">
+      <div class="shell evidence-intro">
+        <h2 id="grimmwood-performance-title">The supplied test, with its limits attached.</h2>
+        <div>
+          <p class="lede">The supplied MT5 Strategy Tester report covers US100p on M30 from 1 June 2024 to 18 August 2026. Grimmwood Apple was designed for NQ; this report uses the broker's US100p instrument as the available MT5 test instrument/proxy.</p>
+          <p class="evidence-source">Source: supplied ReportTester-GrimmWoodApple.xlsx · XSFintech-DEMO · Build 6140 · 73% real ticks</p>
+        </div>
+      </div>
+
+      <div class="shell balance-instrument">
+        <div class="balance-figure reveal">
+          <div class="balance-heading"><div><span>Historical balance</span><strong>US$100,000 → US$114,490.88</strong></div><p>+14.49% net result</p></div>
+          <div style="min-height:280px;display:grid;place-items:center;border-top:1px solid #263342;margin-top:30px;background:linear-gradient(180deg,#07111d 0%,#03070d 100%);">
+            <div style="width:min(86%,760px);display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:end;height:190px;padding:20px 0;" aria-hidden="true">
+              <span style="height:32%;border-top:2px solid #687688;background:#0b1724"></span><span style="height:46%;border-top:2px solid #687688;background:#0b1724"></span><span style="height:51%;border-top:2px solid #f20b16;background:#0b1724"></span><span style="height:72%;border-top:2px solid #687688;background:#0b1724"></span><span style="height:88%;border-top:2px solid #f20b16;background:#0b1724"></span>
+            </div>
+          </div>
+          <figcaption><span>01 Jun 2024</span><span>Historical MT5 simulation</span><span>18 Aug 2026</span></figcaption>
+        </div>
+
+        <dl class="result-ledger reveal" aria-label="Grimmwood Apple test summary">
+          <div><dt>Total net profit</dt><dd>US$14,490.88</dd></div>
+          <div class="risk-reading"><dt>Maximum equity drawdown</dt><dd>3.19% <small>US$3,653.06</small></dd></div>
+          <div><dt>Profit factor</dt><dd>1.65</dd></div>
+          <div><dt>Recovery factor</dt><dd>3.97</dd></div>
+          <div><dt>Total trades</dt><dd>243</dd></div>
+          <div><dt>Winning trades</dt><dd>54.73%</dd></div>
+        </dl>
+      </div>
+
+      <div class="shell test-context">
+        <div class="test-conditions reveal">
+          <h3>What was tested</h3>
+          <table><tbody>
+            <tr><th>EA</th><td>Grimmwood_Apple_Test_v1_00</td></tr>
+            <tr><th>Designed market</th><td>NQ · Nasdaq-100 futures</td></tr>
+            <tr><th>Tester instrument / timeframe</th><td>US100p · M30</td></tr>
+            <tr><th>Test period</th><td>01 Jun 2024 – 18 Aug 2026</td></tr>
+            <tr><th>Initial deposit / leverage</th><td>US$100,000 · 1:100</td></tr>
+            <tr><th>History quality</th><td>73% real ticks · 91,298,806 ticks</td></tr>
+            <tr><th>Activity</th><td>243 trades · 486 deals</td></tr>
+            <tr><th>Average holding time</th><td>00:23:19</td></tr>
+          </tbody></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell split">
+        <div class="sticky reveal"><div class="eyebrow">Authorization</div><h2>Licensed to the exact trading account.</h2><p class="lede">Grimmwood Apple uses the Rabiata broker-bound license model: product + MT5 account number + exact broker server. The EA reads those identifiers from the running terminal; no client license key is entered.</p><a class="btn" href="/licensing/#grimmwood">Full licensing model</a></div>
+        <div class="license-flow reveal">
+          <article class="flow-step"><span class="panel-number">01</span><strong>Send account + server</strong><p>Provide the MT5 account number and exact broker server for Grimmwood Apple.</p></article>
+          <article class="flow-step"><span class="panel-number">02</span><strong>Receive activation</strong><p>Acerbre provisions the GrimmwoodApple product entitlement for that exact pair.</p></article>
+          <article class="flow-step"><span class="panel-number">03</span><strong>Validate online</strong><p>The EA periodically refreshes its short-lived authorization while the license remains valid.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-compact license-decision"><div class="shell license-decision-grid"><h2>Grimmwood Apple is US$506 per month.</h2><div><p>License access is tied to the selected product, MT5 account number and exact broker server.</p><a class="btn" href="mailto:contact@rabiata.com?subject=Grimmwood%20Apple%20license">Request a Grimmwood Apple license</a></div></div></section>
+    <section class="risk-band"><div class="shell risk-grid"><h2>Risk notice</h2><p>Historical simulations are not forward returns. NQ futures and related Nasdaq instruments can move rapidly and can produce losses materially different from historical tests. Grimmwood Apple is execution software, not investment advice.</p></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell"><div class="footer-top"><div class="footer-logo"><img src="/assets/acerbre-logo.webp" alt="Acerbre"><p>Grimmwood Apple · Acerbre · Rabiata LLC</p></div><nav class="footer-nav" aria-label="Footer"><a href="/">Overview</a><a href="/appletree/">AppleTree</a><a href="/grimmwood/">Grimmwood Apple</a><a href="/bergo/">Bergo</a><a href="/licensing/">Licensing</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> Rabiata LLC</span><span>Algorithmic execution software · MetaTrader 5</span></div></div></footer>
+  <script src="/assets/site.js?v=20260828c"></script>
+</body>
+</html>
