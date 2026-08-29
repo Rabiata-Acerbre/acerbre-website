@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 666 920" role="img" aria-labelledby="t d">
+<title id="t">Grimmwood Apple product artwork</title><desc id="d">A dark pixel-art poisoned apple with crimson skin, black cracks and violet seepage over market candlesticks.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#020813"/><stop offset="1" stop-color="#07111d"/></linearGradient>
+  <linearGradient id="apple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f20b16"/><stop offset=".55" stop-color="#8f0711"/><stop offset="1" stop-color="#35020a"/></linearGradient>
+  <linearGradient id="poison" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d73cff"/><stop offset="1" stop-color="#5b0a72"/></linearGradient>
+</defs>
+<rect width="666" height="920" fill="url(#bg)"/>
+<g opacity=".42" fill="none" stroke="#24466c" stroke-width="8" shape-rendering="crispEdges"><path d="M78 326C108 145 232 62 333 62s225 83 255 264"/><path d="M122 326C151 190 248 110 333 110s182 80 211 216"/></g>
+<g opacity=".78" shape-rendering="crispEdges">
+  <rect x="20" y="585" width="12" height="92" fill="#bd0811"/><rect x="45" y="550" width="12" height="70" fill="#6c87a8"/><rect x="70" y="602" width="12" height="52" fill="#bd0811"/>
+  <rect x="95" y="624" width="12" height="78" fill="#7893b4"/><rect x="120" y="650" width="12" height="49" fill="#bd0811"/><rect x="145" y="670" width="12" height="63" fill="#6c87a8"/>
+  <rect x="490" y="642" width="12" height="54" fill="#6c87a8"/><rect x="515" y="612" width="12" height="83" fill="#bd0811"/><rect x="540" y="575" width="12" height="70" fill="#6c87a8"/>
+  <rect x="565" y="540" width="12" height="89" fill="#bd0811"/><rect x="590" y="500" width="12" height="76" fill="#7893b4"/><rect x="615" y="455" width="12" height="94" fill="#bd0811"/>
+</g>
+<path d="M0 713C130 683 214 710 324 694c115-16 206-73 342-111" fill="none" stroke="#8d1017" stroke-width="5" stroke-dasharray="10 8" shape-rendering="crispEdges"/>
+<g shape-rendering="crispEdges">
+  <path d="M338 211c10-45 29-88 57-123 10-12 31-3 27 12-13 40-28 76-40 117z" fill="#1f1518" stroke="#6e3036" stroke-width="8"/>
+  <path d="M314 203c-45-42-91-47-136-20 50 17 92 31 136 20z" fill="#242834" stroke="#5d6878" stroke-width="8"/>
+  <path d="M172 328c37-93 133-131 197-86 66-47 167-6 196 88 22 70-12 151-67 217-42 50-82 104-129 153-48-52-88-104-133-154-57-63-91-147-64-218z" fill="url(#apple)" stroke="#201219" stroke-width="14"/>
+  <path d="M201 328c38-50 84-65 134-44-28 31-43 67-50 111-18-29-43-51-84-67z" fill="#ff3944" opacity=".5"/>
+  <path d="M184 384c31-31 55-21 77 4 20 23 38 22 54-2 22-34 46-35 70-4 21 27 42 25 62-4 22-32 47-28 74 13" fill="none" stroke="#13080c" stroke-width="18"/>
+  <path d="M232 298l28 46-20 48 44 46-11 58 52 44-9 69M425 285l-24 53 21 45-36 50 8 58-39 44 9 78M328 272l14 61-27 39 27 42-15 62 39 42-18 66" fill="none" stroke="#170a10" stroke-width="12"/>
+  <path d="M238 392c14 34 29 54 44 60M406 380c-12 32-26 57-43 75M327 414c-13 34-26 59-38 73" fill="none" stroke="url(#poison)" stroke-width="10"/>
+  <path d="M282 450v70M363 454v82M289 486c-6 35-4 61 5 82M397 437c3 39 0 69-10 92" fill="none" stroke="#d73cff" stroke-width="8"/>
+  <rect x="277" y="517" width="11" height="38" fill="#d73cff"/><rect x="359" y="530" width="11" height="49" fill="#d73cff"/><rect x="286" y="565" width="9" height="29" fill="#7d178f"/><rect x="384" y="525" width="9" height="34" fill="#7d178f"/>
+</g>
+<g shape-rendering="crispEdges"><ellipse cx="333" cy="769" rx="249" ry="67" fill="#08101b" stroke="#3c4a5b" stroke-width="12"/><ellipse cx="333" cy="754" rx="218" ry="45" fill="#0d1723" stroke="#263342" stroke-width="10"/><path d="M151 758h364M171 781h324" stroke="#536174" stroke-width="8" opacity=".48"/></g>
+<g opacity=".72" fill="#ae1ac1" shape-rendering="crispEdges"><rect x="276" y="713" width="14" height="69"/><rect x="356" y="716" width="12" height="93"/><rect x="390" y="731" width="9" height="52"/><rect x="247" y="738" width="9" height="43"/></g>
+<g opacity=".45" fill="#f20b16" shape-rendering="crispEdges"><rect x="228" y="842" width="72" height="10"/><rect x="367" y="861" width="85" height="10"/></g>
+</svg>
